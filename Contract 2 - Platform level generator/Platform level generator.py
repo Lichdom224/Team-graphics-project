@@ -20,6 +20,8 @@ screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Platform level generator")
 platforms = []
 
+# sets up background
+
 def setupbackground():
     global backx
     global backy
@@ -35,6 +37,7 @@ def setupbackground():
     else:
         pass
 
+# sets up a floor platform
 
 def setupplatform():
     global tile
@@ -47,11 +50,11 @@ def setupplatform():
     backx = 0
     while backx < swidth + 64:
         screen.blit(Platform, (backx, backy - tile))
-        print(backx)
         backx = backx + tile
 
     randomplat()
 
+# creates a random platform
 
 def randomplat():
     global backx
@@ -69,13 +72,13 @@ def randomplat():
     list = (platformx, platformy)
     platforms.append(list)
 
+# adds a shrine (not yet implemented
 
 def randomshrine():
     global platforms
 
     choice = random.randint(0, 5, 1)
     if choice == 1:
-        print(choice)
         screen.blit(Shrine, (platforms[1]))
     else:
         pass
