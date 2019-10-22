@@ -72,7 +72,7 @@ def randomplat():
     list = (platformx, platformy)
     platforms.append(list)
 
-# adds a shrine (not yet implemented
+# adds a shrine (not yet implemented)
 
 def randomshrine():
     global platforms
