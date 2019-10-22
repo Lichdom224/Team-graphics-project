@@ -9,3 +9,4 @@ Tutorial for os.walk used in Contract 3 - https://www.mkyong.com/python/python-h
 
 Nicholas Lane (Lichdom224) (Contract 2)  
 Cole Gilbert (ColeGGilbert) (Contract 3)  
+Ceri Thomas (Rhsyn1) (Contract 1)
