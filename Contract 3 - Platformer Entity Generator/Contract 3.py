@@ -40,6 +40,7 @@ def append_character_pieces():
 
     :return:
     """
+
     for r, d, f in os.walk("CharacterPieces\\CharacterArms\\Left"):
         for file in f:
             if '.png' in file:
@@ -76,6 +77,7 @@ def main():
 
     :return:
     """
+
     pygame.init()
 
     monster_file_i = 1  #This variable keeps track of the current monster iteration for use in naming/loading
@@ -115,6 +117,7 @@ def generate_monster(monster_file_i):
     :param monster_file_i:
     :return:
     """
+
     monster_surface = pygame.display.set_mode((MONSTER_SURFACE_WIDTH, MONSTER_SURFACE_HEIGHT))
     monster_surface.fill(PURPLE)    #Purple is used as the colorkey later on to remove this background
 
@@ -162,6 +165,7 @@ def load_monster(display, monster_file_i):
     monster = pygame.image.load(("monster"+str(monster_file_i-1)+".png"))
     monster.set_colorkey(PURPLE)    #The colorkey is used to remove any pixels that are of the colour purple, therefore creating transparency. This is used to remove the background from the monster images
     display.blit(monster, (100, 100))
+
 
 append_character_pieces()
 main()
