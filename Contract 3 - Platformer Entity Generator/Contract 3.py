@@ -4,6 +4,7 @@ Coded by Cole Gilbert
 A part of team 4's submission
 
 Artwork referenced in readme.md and is being used under the Creative Commons Attribution 3.0 License
+Python tutorial used for os.walk referenced in readme.md
 """
 
 import pygame
