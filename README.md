@@ -6,5 +6,5 @@ Licensed under Creative Commons Attribution 3.0 License - https://creativecommon
 
 Tutorial for os.walk used in Contract 3 - https://www.mkyong.com/python/python-how-to-list-all-files-in-a-directory/
 
-Nicholas Lane (Lichdom224) (Contract 2)
-Cole Gilbert (ColeGGilbert) (Contract 3)
+Nicholas Lane (Lichdom224) (Contract 2)  
+Cole Gilbert (ColeGGilbert) (Contract 3)  
