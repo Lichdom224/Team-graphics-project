@@ -1,16 +1,14 @@
-'__Author__ JB229064'
+'__Author__: JB229064'
 
 
 import pygame  # importing pygame to use pygame libraries
 pygame.init()  # initialise pygame
 pygame.display.set_caption("Tinkering Graphics")  # setting a caption
-window = pygame.display.set_mode((717, 177))  # setting window resolution
+window_bg = pygame.display.set_mode((717, 177))  # setting window resolution
 img = pygame.image.load("blind_scale.jpg")  # loading an image
 
 def draw():  # defining draw function
-    window.blit(img, (0, 0))  # loading image onto the screen
-    #pixels = PixelArray(img)  # getting the array of pixels (not working)
-    #pixels.replace(Color(255,255,255,255), Color(0,0,0,0))  # replacing red with black (not working)
+    window_bg.blit(img, (0, 0))  # loading image onto the screen
     pygame.display.update()  # updating frames in pygame
 
 
@@ -25,27 +23,27 @@ def select_option():  # defining a function to allow user to select an option
 
 
 def remove_red(image):  # defining the fucntion for removing red
-    pixel = pygame.Color(0, 0, 0)  # sets a local variable for white
+    target_pixel = pygame.Color(0, 0, 0)  # sets a local variable for white
     for x in range(image.get_width()):  # iterating through the width of the image
         for y in range(image.get_height()):  # iterating through the height of the image
-            pixel = image.get_at((x, y))  # getting the pixel colour value at each position
-            image.set_at((x, y), pygame.Color(pixel.b, pixel.g, 0))  # setting the pixel colour value at each position
+            target_pixel = image.get_at((x, y))  # getting the pixel colour value at each position
+            image.set_at((x, y), pygame.Color(target_pixel.b, target_pixel.g, 0))  # setting the pixel colour value at each position
 
 
 def remove_green(image):  # defining the function for removing green
-    pixel = pygame.Color(0, 0, 0)  # sets a local variable for white
+    target_pixel = pygame.Color(0, 0, 0)  # sets a local variable for white
     for x in range(image.get_width()):  # iterating through the width of the image
         for y in range(image.get_height()):  # iterating through the height of the image
-            pixel = image.get_at((x, y))  # getting the pixel colour value at each position
-            image.set_at((x, y), pygame.Color(pixel.b, 0, pixel.r))  # setting the pixel colour value at each position          
+            target_pixel = image.get_at((x, y))  # getting the pixel colour value at each position
+            image.set_at((x, y), pygame.Color(target_pixel.b, 0, target_pixel.r))  # setting the pixel colour value at each position          
 
 
 def remove_blue(image):  # defining the function for removing blue
-    pixel = pygame.Color(0, 0, 0)  # sets a local variable for white
+    target_pixel = pygame.Color(0, 0, 0)  # sets a local variable for white
     for x in range(image.get_width()):  # iterating through the width of the image
         for y in range(image.get_height()):  # iterating through the height of the image
-            pixel = image.get_at((x, y))  # getting the pixel colour value at each position
-            image.set_at((x, y), pygame.Color(0, pixel.g, pixel.r))  # setting the pixel colour value at each position         
+            target_pixel = image.get_at((x, y))  # getting the pixel colour value at each position
+            image.set_at((x, y), pygame.Color(0, target_pixel.g, target_pixel.r))  # setting the pixel colour value at each position         
 
 
 # main loop
