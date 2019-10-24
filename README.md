@@ -5,6 +5,7 @@ We used GPL - 3.0 license because it encourages free use for all and we encourag
 ### References:
 Artwork used in Contract 3 - https://www.deviantart.com/80markus/art/2D-Fantasy-Characters-Pack-1-563554425
 Licensed under Creative Commons Attribution 3.0 License - https://creativecommons.org/licenses/by/3.0/
+Code Grammar used in Contract 5 - Various mash up of sources from https://stackoverflow.com/
 
 Tutorial for os.walk used in Contract 3 - https://www.mkyong.com/python/python-how-to-list-all-files-in-a-directory/
 
