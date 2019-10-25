@@ -2,6 +2,8 @@ import pygame
 import random
 pygame.init()
 
+# Author Nicholas Lane
+
 swidth = 500
 sheight = 500
 size = (swidth, sheight)
@@ -21,7 +23,7 @@ pygame.display.set_caption("Platform level generator")
 platforms = []
 
 
-# sets up background
+# sets up background which tiles to the size of the screen
 
 
 def setupbackground():
@@ -40,7 +42,7 @@ def setupbackground():
         pass
 
 
-# sets up a floor platform
+# sets up a floor platform that covers the whole floor
 
 
 def setupplatform():
@@ -59,7 +61,7 @@ def setupplatform():
     randomplat()
 
 
-# creates a random platform
+# creates a random 3 tile long platform above the main floor
 
 
 def randomplat():
@@ -91,8 +93,7 @@ def randomshrine():
         pass
 
 
-# main loop
-
+# main loop which the game runs from
 
 run = True
 while run:
